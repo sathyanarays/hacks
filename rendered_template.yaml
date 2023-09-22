@@ -1,0 +1,75 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    addon.oam.dev/traitDefinitions: mytrait
+  creationTimestamp: null
+  labels:
+    addons.oam.dev/name: firstaddon
+    addons.oam.dev/registry: local
+    addons.oam.dev/version: 1.0.0
+  name: addon-firstaddon
+  namespace: vela-system
+spec:
+  components:
+  - name: myresource
+    properties:
+      objects:
+      - apiVersion: v1
+        kind: Namespace
+        metadata:
+          name: myns
+    type: k8s-objects
+status: {}
+
+---
+apiVersion: core.oam.dev/v1beta1
+kind: TraitDefinition
+metadata:
+  annotations:
+    definition.oam.dev/alias: mt
+    definition.oam.dev/description: My trait description.
+  labels: {}
+  name: mytrait
+  namespace: vela-system
+spec:
+  appliesToWorkloads:
+  - deployments.apps
+  - replicasets.apps
+  - statefulsets.apps
+  conflictsWith: null
+  podDisruptive: false
+  schematic:
+    cue:
+      template: |
+        parameter: param: ""
+        outputs: sample: {}
+  workloadRefPath: ""
+
+---
+apiVersion: v1
+data:
+  ui-schema: '[{"jsonKey":"myparam","label":"MyParam","validate":{"required":true}}]'
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: myschema
+  namespace: vela-system
+
+---
+apiVersion: v1
+data:
+  template: "// We put VelaQL views in views directory.\n//\n// VelaQL(Vela Query
+    Language) is a resource query language for KubeVela, \n// used to query status
+    of any extended resources in application-level.\n// Reference: https://kubevela.net/docs/platform-engineers/system-operation/velaql\n//\n//
+    This VelaQL View queries the status of this addon.\n// Use this view to query
+    by:\n//     vela ql --query 'my-view{addonName:firstaddon}.status'\n// You should
+    see 'running'.\n\nimport (\n\t\"vela/ql\"\n)\n\napp: ql.#Read & {\n\tvalue: {\n\t\tkind:
+    \      \"Application\"\n\t\tapiVersion: \"core.oam.dev/v1beta1\"\n\t\tmetadata:
+    {\n\t\t\tname:      \"addon-\" + parameter.addonName\n\t\t\tnamespace: \"vela-system\"\n\t\t}\n\t}\n}\n\nparameter:
+    {\n\taddonName: *\"firstaddon\" | string\n}\n\nstatus: app.value.status.status\n"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: my-view
+  namespace: vela-system
