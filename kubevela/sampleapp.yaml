@@ -8,4 +8,5 @@ spec:
     - name: selfsigned
       type: selfsigned-certificate
       properties:
+        namespace: "test-abc"
         

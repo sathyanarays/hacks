@@ -13,7 +13,7 @@ template: {
         apiVersion: "cert-manager.io/v1"
         metadata: {
             name: "selfsigned"
-            namespace: "default"
+            namespace: parameter.namespace
         }
         spec: {
             selfSigned: {}
@@ -25,7 +25,7 @@ template: {
             apiVersion: "cert-manager.io/v1"
             metadata: {
                 name: "selfsigned"
-                namespace: "default"
+                namespace: parameter.namespace
             }
             spec: {
                 commonName: "my-certificate"
@@ -33,9 +33,14 @@ template: {
                 issuerRef:
                     name: "selfsigned"
                     kind: "Issuer"
-                    namespace: "default"
+                    namespace: parameter.namespace
                     group: "cert-manager.io"
             }
         }
     }
+
+    parameter: {
+        namespace: *"default" |string
+    }
 }
+
