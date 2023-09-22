@@ -1,0 +1,11 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: myselfsigned
+  namespace: default
+spec:
+  components:
+    - name: selfsigned
+      type: selfsigned-certificate
+      properties:
+        
