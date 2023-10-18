@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sidecar-test
+  labels:
+    role: myrole
+spec:
+  initContainers:
+  - name: sidecar
+    image: ubuntu:latest
+    command: ["sleep"]
+    args: ["3600"]
+    restartPolicy: "Always"
+  - name: init-container
+    image: ubuntu:latest
+    command: ["sleep"]
+    args: ["5"]
+  containers:
+    - name: main
+      image: ubuntu:latest
+      command: ["sleep"]
+      args: ["3600"]
