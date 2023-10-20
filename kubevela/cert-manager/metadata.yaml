@@ -1,7 +1,0 @@
-description: An addon for KubeVela.
-icon: ""
-invisible: false
-name: cert-manager
-tags:
-- cert-manager
-version: 1.0.0
