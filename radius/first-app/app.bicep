@@ -30,5 +30,8 @@ resource db 'Applications.Datastores/redisCaches@2023-10-01-preview' = {
   properties: {
     application: application
     environment: environment
+    recipe: {
+      name: 'myrecipe'
+    }
   }
 }

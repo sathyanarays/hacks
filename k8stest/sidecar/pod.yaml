@@ -20,4 +20,4 @@ spec:
       image: ubuntu:latest
       command: ["sleep"]
       args: ["60"]
-      restartPolicy: Never
+  restartPolicy: Never
