@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ubuntu
+spec:
+  selector:
+    matchLabels:
+      app: ubuntu
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: ubuntu
+    spec:
+      containers:
+        - name: main
+          image: ubuntu:latest
+          command: ["sleep"]
+          args: ["3500"]
+          lifecycle:
+            preStop:
+              sleep:
+                seconds: 30      
