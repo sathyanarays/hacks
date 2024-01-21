@@ -2,7 +2,7 @@
 
 __global__ void helloFromGPU(void)
 {
-    printf("Hello World from GPU\n");
+    printf("Hello World from GPU Hell\n");
 }
 
 int main(void)
