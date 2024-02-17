@@ -43,8 +43,13 @@ void sumArraysOnHost(float *A, float *B, float *C, const int N) {
     }
 }
 
-__global__ void sumArraysOnGPU(float *A, float *B, float *C) {
-    int i = threadIdx.x;
+__global__ void sumArraysOnGPU(float *A, float *B, float *C) {    
+    int b = blockIdx.x;
+    int t = threadIdx.x + threadIdx.y * 2 + threadIdx.z * 8;    
+
+    int i = b * 32 + t;
+    printf("b = %d, threadId.x = %d, threadId.y = %d, threadId.z = %d, i = %d\n", b,threadIdx.x,threadIdx.y,threadIdx.z,i);
+
     C[i] = A[i] + B[i];
 }
 
@@ -85,8 +90,8 @@ int main(int argc, char **argv) {
     cudaMemcpy(d_B, h_B, nBytes, cudaMemcpyHostToDevice);
 
     // invoke kernel at host side
-    dim3 block (nElem);
-    dim3 grid (nElem/block.x);
+    dim3 block (2,4,4);
+    dim3 grid (2);
 
     sumArraysOnGPU<<< grid, block >>>(d_A, d_B, d_C);
     printf("Execution configuration <<<%d, %d>>>\n", grid.x, block.x);
