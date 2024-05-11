@@ -1,0 +1,1 @@
+ nvcc ncclBcast.cu -o ncclBcast -lnccl
