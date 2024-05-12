@@ -22,6 +22,12 @@ WORKDIR /send_recv
 
 RUN make mpi_send_recv
 
+COPY pingpong /pingpong
+
+WORKDIR /pingpong
+
+RUN make pingpong
+
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
 RUN echo "root:pass1234" | chpasswd
