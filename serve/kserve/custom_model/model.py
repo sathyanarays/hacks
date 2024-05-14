@@ -4,6 +4,7 @@ from torchvision import models
 from typing import Dict, Union
 import torch
 import numpy as np
+import kserve
 from kserve import Model, ModelServer
 
 class AlexNetModel(Model):

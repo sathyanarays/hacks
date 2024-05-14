@@ -1,1 +1,3 @@
-mlserver
+kserve
+torchvision
+torch
