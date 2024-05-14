@@ -10,7 +10,7 @@ RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 
 RUN python3 get-pip.py
 
-RUN pip3 install kserve torch torchvision
+RUN pip3 install kserve torch torchvision transformers
 
 COPY model.py model.py
 
