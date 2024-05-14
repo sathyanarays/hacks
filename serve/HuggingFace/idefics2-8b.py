@@ -12,7 +12,8 @@ DEVICE = "cpu"
 image1 = load_image("https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg")
 image2 = load_image("https://cdn.britannica.com/59/94459-050-DBA42467/Skyline-Chicago.jpg")
 image3 = load_image("https://cdn.britannica.com/68/170868-050-8DDE8263/Golden-Gate-Bridge-San-Francisco.jpg")
-
+image4 = load_image("https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg")
+image5 = load_image("temple.jpg")
 processor = AutoProcessor.from_pretrained("HuggingFaceM4/idefics2-8b-base")
 model = AutoModelForVision2Seq.from_pretrained(
     "HuggingFaceM4/idefics2-8b-base",
@@ -22,8 +23,10 @@ model = AutoModelForVision2Seq.from_pretrained(
 prompts = [
   "<image>In this image, we can see the city of New York, and more specifically the Statue of Liberty.<image>In this image,",
   "In which city is that bridge located?<image>",
+  "What is this building?<image>",
+  "Who built this?<image>",
 ]
-images = [[image1, image2], [image3]]
+images = [[image1, image2], [image3], [image4], [image5]]
 inputs = processor(text=prompts, images=images, padding=True, return_tensors="pt")
 inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
 
