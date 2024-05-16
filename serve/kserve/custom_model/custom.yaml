@@ -1,0 +1,16 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: custom-model
+spec:
+  predictor:
+    containers:
+      - name: kserve-container
+        image: sathyatvrcbe/custom-image:v1
+        resources:
+          requests:
+            memory: "40Gi"
+            cpu: "4"
+          limits:
+            memory: "40Gi"
+            cpu: "4"
