@@ -1,0 +1,243 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  annotations:
+    networking.internal.knative.dev/rollout: '{"configurations":[{"configurationName":"my-model-predictor","percent":10,"revisions":[{"revisionName":"my-model-predictor-00002","percent":10}],"stepParams":{}}]}'
+    networking.knative.dev/ingress.class: istio.ingress.networking.knative.dev
+    serving.knative.dev/creator: system:serviceaccount:kserve:kserve-controller-manager
+    serving.knative.dev/lastModifier: system:serviceaccount:kserve:kserve-controller-manager
+  creationTimestamp: "2024-05-19T14:35:31Z"
+  generation: 3
+  labels:
+    networking.internal.knative.dev/ingress: my-model-predictor
+    serving.knative.dev/route: my-model-predictor
+    serving.knative.dev/routeNamespace: default
+  name: my-model-predictor-ingress
+  namespace: default
+  ownerReferences:
+  - apiVersion: networking.internal.knative.dev/v1alpha1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Ingress
+    name: my-model-predictor
+    uid: 2ca89a49-8cd0-411e-9526-d8b372315ba2
+  resourceVersion: "1507903"
+  uid: 5fb97804-751a-4028-a1e4-8df4376140c9
+spec:
+  gateways:
+  - knative-serving/knative-ingress-gateway
+  - knative-serving/knative-local-gateway
+  hosts:
+  - my-model-predictor.default
+  - my-model-predictor.default.example.com
+  - my-model-predictor.default.svc
+  - my-model-predictor.default.svc.cluster.local
+  - prev-my-model-predictor.default
+  - prev-my-model-predictor.default.example.com
+  - prev-my-model-predictor.default.svc
+  - prev-my-model-predictor.default.svc.cluster.local
+  http:
+  - headers:
+      request:
+        set:
+          K-Network-Hash: fefebd94c91fce25147f61dc585c574f5252c6cace033f037c4685942ebe4ebe
+    match:
+    - authority:
+        prefix: my-model-predictor.default
+      gateways:
+      - knative-serving/knative-local-gateway
+      headers:
+        K-Network-Hash:
+          exact: override
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00002.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00002
+      weight: 10
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 90
+  - match:
+    - authority:
+        prefix: my-model-predictor.default
+      gateways:
+      - knative-serving/knative-local-gateway
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00002.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00002
+      weight: 10
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 90
+  - headers:
+      request:
+        set:
+          K-Network-Hash: fefebd94c91fce25147f61dc585c574f5252c6cace033f037c4685942ebe4ebe
+    match:
+    - authority:
+        prefix: my-model-predictor.default.example.com
+      gateways:
+      - knative-serving/knative-ingress-gateway
+      headers:
+        K-Network-Hash:
+          exact: override
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00002.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00002
+      weight: 10
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 90
+  - match:
+    - authority:
+        prefix: my-model-predictor.default.example.com
+      gateways:
+      - knative-serving/knative-ingress-gateway
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00002.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00002
+      weight: 10
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 90
+  - headers:
+      request:
+        set:
+          K-Network-Hash: fefebd94c91fce25147f61dc585c574f5252c6cace033f037c4685942ebe4ebe
+    match:
+    - authority:
+        prefix: prev-my-model-predictor.default
+      gateways:
+      - knative-serving/knative-local-gateway
+      headers:
+        K-Network-Hash:
+          exact: override
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 100
+  - match:
+    - authority:
+        prefix: prev-my-model-predictor.default
+      gateways:
+      - knative-serving/knative-local-gateway
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 100
+  - headers:
+      request:
+        set:
+          K-Network-Hash: fefebd94c91fce25147f61dc585c574f5252c6cace033f037c4685942ebe4ebe
+    match:
+    - authority:
+        prefix: prev-my-model-predictor.default.example.com
+      gateways:
+      - knative-serving/knative-ingress-gateway
+      headers:
+        K-Network-Hash:
+          exact: override
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 100
+  - match:
+    - authority:
+        prefix: prev-my-model-predictor.default.example.com
+      gateways:
+      - knative-serving/knative-ingress-gateway
+    retries: {}
+    route:
+    - destination:
+        host: my-model-predictor-00001.default.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          set:
+            Knative-Serving-Namespace: default
+            Knative-Serving-Revision: my-model-predictor-00001
+      weight: 100

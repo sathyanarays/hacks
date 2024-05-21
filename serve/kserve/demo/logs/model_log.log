@@ -1,0 +1,1183 @@
+2024-05-16T16:40:16,839 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=913195
+2024-05-16T16:40:16,840 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:16,843 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:16,843 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]913195
+2024-05-16T16:40:16,843 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:16,843 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:16,848 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:16,863 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:17,211 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:17,212 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:17,213 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:17,214 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:40:18,743 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=913450
+2024-05-16T16:40:18,743 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:18,746 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:18,746 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]913450
+2024-05-16T16:40:18,746 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:18,746 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:18,747 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:18,755 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:19,099 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:19,100 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:19,101 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:20,602 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=913501
+2024-05-16T16:40:20,603 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:20,606 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:20,606 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]913501
+2024-05-16T16:40:20,606 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:20,606 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:20,607 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:20,615 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:20,958 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:20,959 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:20,959 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:20,960 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:23,497 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=913688
+2024-05-16T16:40:23,497 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:23,501 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:23,501 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]913688
+2024-05-16T16:40:23,501 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:23,501 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:23,502 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:23,510 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:23,856 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:23,857 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:40:27,376 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=913883
+2024-05-16T16:40:27,377 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:27,380 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:27,380 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]913883
+2024-05-16T16:40:27,380 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:27,380 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:27,381 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:27,389 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:27,732 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:40:33,264 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=914113
+2024-05-16T16:40:33,265 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:33,268 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:33,268 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]914113
+2024-05-16T16:40:33,268 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:33,268 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:33,269 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:33,277 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:33,627 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:40:42,129 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=914626
+2024-05-16T16:40:42,129 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:42,132 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:42,132 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]914626
+2024-05-16T16:40:42,132 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:42,132 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:42,133 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:42,141 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:42,488 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:40:55,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=915241
+2024-05-16T16:40:55,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:40:55,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:40:55,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]915241
+2024-05-16T16:40:55,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:40:55,998 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:40:55,999 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:40:56,006 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:40:56,359 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:40:56,360 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:41:17,869 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=916288
+2024-05-16T16:41:17,869 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:41:17,872 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:41:17,872 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]916288
+2024-05-16T16:41:17,872 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:41:17,872 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:41:17,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:41:17,881 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:41:18,224 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:41:52,754 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=917945
+2024-05-16T16:41:52,754 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:41:52,758 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:41:52,758 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]917945
+2024-05-16T16:41:52,758 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:41:52,758 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:41:52,758 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:41:52,766 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:41:53,110 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:41:53,111 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:42:48,640 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=920443
+2024-05-16T16:42:48,640 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:42:48,643 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:42:48,643 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]920443
+2024-05-16T16:42:48,643 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:42:48,643 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:42:48,644 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:42:48,652 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:42:48,993 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:42:48,993 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:42:48,994 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:42:48,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:42:48,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:42:48,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:42:48,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:42:48,995 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:44:18,511 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=924658
+2024-05-16T16:44:18,511 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:44:18,515 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:44:18,515 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]924658
+2024-05-16T16:44:18,515 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:44:18,515 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:44:18,516 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:44:18,523 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:44:18,868 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:46:43,369 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=930799
+2024-05-16T16:46:43,369 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:46:43,372 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:46:43,372 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]930799
+2024-05-16T16:46:43,372 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:46:43,372 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:46:43,373 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:46:43,380 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/0801ff6755f34d89b85fe882886710b1/mnist_handler.py", line 2, in <module>
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:46:43,729 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:47:18,502 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=932817
+2024-05-16T16:47:18,502 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:18,505 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:18,505 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]932817
+2024-05-16T16:47:18,505 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:18,505 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:18,512 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:18,526 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:18,873 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:18,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:18,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:18,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:18,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:18,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:18,875 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:18,876 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:18,877 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:18,878 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:18,878 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:18,878 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:18,878 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:47:18,878 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:47:20,391 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=932898
+2024-05-16T16:47:20,392 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:20,395 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:20,395 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]932898
+2024-05-16T16:47:20,395 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:20,395 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:20,396 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:20,404 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:20,748 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:20,749 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:20,750 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:22,276 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=933036
+2024-05-16T16:47:22,276 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:22,280 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:22,280 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]933036
+2024-05-16T16:47:22,280 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:22,280 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:22,280 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:22,288 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:22,633 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:22,634 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:25,139 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=933232
+2024-05-16T16:47:25,140 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:25,143 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:25,143 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]933232
+2024-05-16T16:47:25,143 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:25,143 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:25,144 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:25,151 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:25,497 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:25,498 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:25,499 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:25,499 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:25,499 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:25,499 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:29,003 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=933493
+2024-05-16T16:47:29,003 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:29,006 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:29,006 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]933493
+2024-05-16T16:47:29,006 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:29,006 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:29,007 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:29,015 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:29,362 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:29,363 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:29,363 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:29,363 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:47:29,363 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:47:34,880 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=933671
+2024-05-16T16:47:34,880 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:34,883 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:34,883 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]933671
+2024-05-16T16:47:34,884 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:34,884 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:34,884 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:34,892 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:35,239 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:47:35,240 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:47:43,766 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=934311
+2024-05-16T16:47:43,766 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:43,769 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:43,769 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]934311
+2024-05-16T16:47:43,769 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:43,769 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:43,770 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:43,778 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:44,125 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:47:44,126 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:47:57,641 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=935119
+2024-05-16T16:47:57,641 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:47:57,644 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:47:57,644 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]935119
+2024-05-16T16:47:57,644 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:47:57,644 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:47:57,646 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:47:57,653 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:47:57,996 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:47:57,996 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:57,996 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:47:57,996 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:47:57,996 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:47:57,997 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:48:19,517 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=936094
+2024-05-16T16:48:19,517 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:48:19,520 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:48:19,520 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]936094
+2024-05-16T16:48:19,520 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:48:19,520 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:48:19,521 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:48:19,529 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:48:19,874 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'
+2024-05-16T16:48:54,420 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=938191
+2024-05-16T16:48:54,421 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-05-16T16:48:54,424 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Successfully loaded /home/ssaravanamut/.local/lib/python3.10/site-packages/ts/configs/metrics.yaml.
+2024-05-16T16:48:54,424 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - [PID]938191
+2024-05-16T16:48:54,424 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Torch worker started.
+2024-05-16T16:48:54,424 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Python runtime: 3.10.12
+2024-05-16T16:48:54,425 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-05-16T16:48:54,432 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - model_name: mnist, batchSize: 1
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 108, in load
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module, function_name = self._load_handler_file(handler)
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 153, in _load_handler_file
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name)
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/tmp/models/24f51cd63d0c4bc5a16c30c6a43c412e/mnist_handler.py", line 2, in <module>
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from ts.torch_handler.image_classifier import ImageClassifier
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/image_classifier.py", line 11, in <module>
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from .vision_handler import VisionHandler
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/torch_handler/vision_handler.py", line 11, in <module>
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     from captum.attr import IntegratedGradients
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'captum'
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - During handling of the above exception, another exception occurred:
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - 
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-05-16T16:48:54,796 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 110, in load
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = self._load_default_handler(handler)
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/home/ssaravanamut/.local/lib/python3.10/site-packages/ts/model_loader.py", line 159, in _load_default_handler
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     module = importlib.import_module(module_name, "ts.torch_handler")
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -     return _bootstrap._gcd_import(name[level:], package, level)
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG -   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+2024-05-16T16:48:54,797 [INFO ] W-9000-mnist_1.0-stdout MODEL_LOG - ModuleNotFoundError: No module named 'ts.torch_handler.mnist_handler'

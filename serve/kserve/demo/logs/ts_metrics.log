@@ -1,0 +1,12 @@
+2024-05-16T16:40:40,427 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715857840
+2024-05-16T16:40:46,786 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715857846
+2024-05-16T16:42:12,855 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715857932
+2024-05-16T16:42:44,429 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715857964
+2024-05-16T16:42:51,500 - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:99b2c4d-lcedt,timestamp:1715857971
+2024-05-16T16:43:04,479 - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:99b2c4d-lcedt,timestamp:1715857984
+2024-05-16T16:45:31,910 - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:99b2c4d-lcedt,timestamp:1715858131
+2024-05-16T16:46:51,259 - ts_inference_requests_total.Count:1.0|#model_name:mnist,model_version:default|#hostname:99b2c4d-lcedt,timestamp:1715858211
+2024-05-16T16:47:27,418 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715858247
+2024-05-16T16:47:38,392 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715858258
+2024-05-16T16:47:39,419 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715858259
+2024-05-16T16:47:48,696 - Requests4XX.Count:1.0|#Level:Host|#hostname:99b2c4d-lcedt,timestamp:1715858268
