@@ -2,13 +2,14 @@ import argparse
 from typing import List, Tuple
 
 from vllm import EngineArgs, LLMEngine, RequestOutput, SamplingParams
+import json
 
 
 def create_test_prompts() -> List[Tuple[str, SamplingParams]]:
     """Create a list of test prompts with their sampling parameters."""
     return [
-        ("A robot may not injure a human being",
-         SamplingParams(temperature=0.0, logprobs=1, prompt_logprobs=1)),        
+        ("A robot may not injure a human being; but,",
+         SamplingParams(temperature=0, logprobs=1, prompt_logprobs=1, max_tokens=20)),        
     ]
 
 
@@ -23,12 +24,17 @@ def process_requests(engine: LLMEngine,
             engine.add_request(str(request_id), prompt, sampling_params)
             request_id += 1
 
+        print("################# Stepping")
         request_outputs: List[RequestOutput] = engine.step()
 
         for request_output in request_outputs:
             if request_output.finished:
-                print("###############################")
-                print(request_output)
+                print("############################### Outputs")                
+                #print(request_output)
+                for output in request_output.outputs:
+                    print("##### output")
+                    print(output.text)
+                    print(output.cumulative_logprob)
 
 
 def initialize_engine(args: argparse.Namespace) -> LLMEngine:

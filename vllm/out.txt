@@ -1,0 +1,1810 @@
+INFO 05-23 14:10:21 llm_engine.py:100] Initializing an LLM engine (v0.4.2) with config: model='facebook/opt-125m', speculative_config=None, tokenizer='facebook/opt-125m', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=2048, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=facebook/opt-125m)
+INFO 05-23 14:10:22 utils.py:660] Found nccl from library /home/ssaravanamut/.config/vllm/nccl/cu12/libnccl.so.2.18.1
+INFO 05-23 14:10:22 selector.py:69] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 05-23 14:10:22 selector.py:32] Using XFormers backend.
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+########## numHeads, embdeDim 12 768
+num_heads 12
+head_dim 64
+scaling 0.125
+INFO 05-23 14:10:23 weight_utils.py:199] Using model weights format ['*.bin']
+INFO 05-23 14:10:24 model_runner.py:175] Loading model weights took 0.2389 GB
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+####### Forward torch.Size([2048, 768]) torch.Size([2048, 768]) torch.Size([2048, 768])
+INFO 05-23 14:10:26 gpu_executor.py:114] # GPU blocks: 4351, # CPU blocks: 7281
+##### num_blocks 4351
+##### block_size, num_kv_heads, head_size 16 12 64
+#### Init cache num_layers 12
+#### init cache kv_cache_shape (2, 4351, 12288)
+#### attn_backend <class 'vllm.attention.backends.xformers.XFormersBackend'>
+##### num_blocks 7281
+##### block_size, num_kv_heads, head_size 16 12 64
+#### Init cache num_layers 12
+#### init cache kv_cache_shape (2, 7281, 12288)
+#### attn_backend <class 'vllm.attention.backends.xformers.XFormersBackend'>
+INFO 05-23 14:10:28 model_runner.py:937] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 05-23 14:10:28 model_runner.py:941] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([256, 768]) torch.Size([256, 768]) torch.Size([256, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([248, 768]) torch.Size([248, 768]) torch.Size([248, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([240, 768]) torch.Size([240, 768]) torch.Size([240, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([232, 768]) torch.Size([232, 768]) torch.Size([232, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([224, 768]) torch.Size([224, 768]) torch.Size([224, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([216, 768]) torch.Size([216, 768]) torch.Size([216, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([208, 768]) torch.Size([208, 768]) torch.Size([208, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([200, 768]) torch.Size([200, 768]) torch.Size([200, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([192, 768]) torch.Size([192, 768]) torch.Size([192, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([184, 768]) torch.Size([184, 768]) torch.Size([184, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([176, 768]) torch.Size([176, 768]) torch.Size([176, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([168, 768]) torch.Size([168, 768]) torch.Size([168, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([160, 768]) torch.Size([160, 768]) torch.Size([160, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([152, 768]) torch.Size([152, 768]) torch.Size([152, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([144, 768]) torch.Size([144, 768]) torch.Size([144, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([136, 768]) torch.Size([136, 768]) torch.Size([136, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([128, 768]) torch.Size([128, 768]) torch.Size([128, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([120, 768]) torch.Size([120, 768]) torch.Size([120, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([112, 768]) torch.Size([112, 768]) torch.Size([112, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([104, 768]) torch.Size([104, 768]) torch.Size([104, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([96, 768]) torch.Size([96, 768]) torch.Size([96, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([88, 768]) torch.Size([88, 768]) torch.Size([88, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([80, 768]) torch.Size([80, 768]) torch.Size([80, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([72, 768]) torch.Size([72, 768]) torch.Size([72, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([64, 768]) torch.Size([64, 768]) torch.Size([64, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([56, 768]) torch.Size([56, 768]) torch.Size([56, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([48, 768]) torch.Size([48, 768]) torch.Size([48, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([40, 768]) torch.Size([40, 768]) torch.Size([40, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([32, 768]) torch.Size([32, 768]) torch.Size([32, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([24, 768]) torch.Size([24, 768]) torch.Size([24, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([16, 768]) torch.Size([16, 768]) torch.Size([16, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([8, 768]) torch.Size([8, 768]) torch.Size([8, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([4, 768]) torch.Size([4, 768]) torch.Size([4, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([2, 768]) torch.Size([2, 768]) torch.Size([2, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([1, 768]) torch.Size([1, 768]) torch.Size([1, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+INFO 05-23 14:10:35 model_runner.py:1017] Graph capturing finished in 7 secs.
+################# Stepping
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+####### Forward torch.Size([12, 768]) torch.Size([12, 768]) torch.Size([12, 768])
+####### kv_cache.shape torch.Size([2, 4351, 12288]) True torch.float16
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+################# Stepping
+############################### Outputs
+##### output
+ it may injure a human being.
+
+The human being is a robot, and the robot is
+-24.151294708251953
