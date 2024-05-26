@@ -13,6 +13,3 @@ print("Category: ", train_labels[100])
 plt.figure(figsize=(1,1))
 plt.imshow(train_images[100])
 plt.show()
-
-print(train_images.shape)
-print(train_labels.shape)
