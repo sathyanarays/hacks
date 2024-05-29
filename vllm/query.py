@@ -6,15 +6,16 @@ client = OpenAI(
 )
 
 def query():
-    client.completions.create(
+    completion = client.completions.create(
     model="facebook/opt-125m",
-    prompt = "Sachin Tendulkar is",
-    max_tokens=2040,
+    prompt = "London is the",
+    max_tokens=200,
     n=1
     )
+    print(completion)
 
 threads = []
-for i in range(1000):
+for i in range(1):
     thread = threading.Thread(target=query)
     threads.append(thread)
     thread.start()
