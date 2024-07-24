@@ -1,0 +1,9 @@
+[project]
+name = "timmins"
+version = "0.0.1"
+
+[project.scripts]
+hello-world = "timmins:hello_world"
+
+[project.entry-points.'myapp.plugins']
+timmins = 'timmins'
