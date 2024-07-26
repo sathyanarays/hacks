@@ -5,9 +5,10 @@ else:
     from importlib.metadata import entry_points
 
 discovered_plugins = entry_points(group='myapp.plugins')
+print(discovered_plugins)
 
-mod = discovered_plugins['timmins'].load()
+for plugin in discovered_plugins:
+    print(plugin)
+    fn = discovered_plugins[plugin.name].load()
+    fn()
 
-mod.hello_world()
-
-mod.hello_world_2()

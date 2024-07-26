@@ -6,4 +6,4 @@ version = "0.0.1"
 hello-world = "timmins:hello_world"
 
 [project.entry-points.'myapp.plugins']
-timmins = 'timmins'
+timmins = 'timmins:hello_world'

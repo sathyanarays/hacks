@@ -2,4 +2,4 @@
 hello-world = timmins:hello_world
 
 [myapp.plugins]
-timmins = timmins
+timmins = timmins:hello_world
