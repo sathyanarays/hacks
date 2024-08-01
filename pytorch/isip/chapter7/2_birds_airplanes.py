@@ -95,6 +95,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+train_loader = torch.utils.data.DataLoader(cifar2, batch_size=64, shuffle=True)
+
 model = nn.Sequential(
             nn.Linear(3072, 512),
             nn.Tanh(),
@@ -110,9 +112,9 @@ loss_fn = nn.NLLLoss()
 n_epochs = 100
 
 for epoch in range(n_epochs):
-    for img, label in cifar2:
-        out = model(img.view(-1).unsqueeze(0))
-        loss = loss_fn(out, torch.tensor([label]))
+    for imgs, labels in train_loader:
+        outputs = model(imgs.view(imgs.shape[0], -1))
+        loss = loss_fn(outputs, labels)
 
         optimizer.zero_grad()
         loss.backward()
