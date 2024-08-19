@@ -26,9 +26,16 @@ import torch.nn.functional as F
 
 def scaled_dot_product_attention(query, key, value):
     dim_k = query.size(-1)
-    scores = torch.bmm(query, key.transpose(1,2)) / sqrt(dim_k)
+    #print("### Attention")
+    #print("### Q", query.shape)
+    #print("### K", key.shape)
+    #print("### V", value.shape)
+    scores = torch.bmm(query, key.transpose(1,2)) / sqrt(dim_k)    
     weights = F.softmax(scores, dim=-1)
-    return torch.bmm(weights, value)
+    #print("### weights", weights)
+    res = torch.bmm(weights, value)
+    #print("### res", res.shape)
+    return res
 
 class AttentionHead(nn.Module):
     def __init__(self, embed_dim, head_dim):
@@ -62,21 +69,25 @@ class MultiHeadAttention(nn.Module):
     
 multihead_attn = MultiHeadAttention(config)
 attn_output = multihead_attn(inputs_embeds)
-print(attn_output.size())
+print(attn_output.shape)
 
-from bertviz import head_view
-from transformers import AutoModel
+print(config)
 
-model = AutoModel.from_pretrained(model_ckpt, output_attentions=True)
-
-sentence_a = "time flies like an arrow"
-sentence_b = "fruit flies like a banana"
-
-viz_inputs = tokenizer(sentence_a, sentence_b, return_tensors='pt')
-attention = model(**viz_inputs).attentions
-print(viz_inputs)
-sentence_b_start = 7
-tokens = tokenizer.convert_ids_to_tokens(viz_inputs.input_ids[0])
-
-view = head_view(attention, tokens, sentence_b_start, heads=[8])
-print(view)
+class FeedForward(nn.Module):
+    def __init__(self, config):
+        super().__init__()
+        self.linear_1 = nn.Linear(config.hidden_size, config.hidden_size)
+        self.linear_2 = nn.Linear(config.hidden_size, config.hidden_size)
+        self.gelu = nn.GELU()
+        self.dropout = nn.Dropout(config.dropout)
+    
+    def forward(self, x):
+        x = self.linear_1(x)
+        x = self.gelu(x)
+        x = self.linear_2(x)
+        x = self.dropout(x)
+        return x
+    
+feed_forward = FeedForward(config)
+ff_outputs = feed_forward(attn_output)
+print(ff_outputs.shape)
