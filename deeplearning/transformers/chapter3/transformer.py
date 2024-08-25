@@ -91,3 +91,25 @@ class FeedForward(nn.Module):
 feed_forward = FeedForward(config)
 ff_outputs = feed_forward(attn_output)
 print(ff_outputs.shape)
+
+class TransformerEncoderLayer(nn.Module):
+    def __init__(self, config):
+        super().__init__()
+        self.layer_norm_1 = nn.LayerNorm(config.hidden_size)
+        self.layer_norm_2 = nn.LayerNorm(config.hidden_size)
+        self.attention = MultiHeadAttention(config)
+        self.feed_forward = FeedForward(config)
+    
+    def forward(self, x):
+        # Apply layer normalization and then copy input into query, key, value
+        hidden_state = self.layer_norm_1(x)
+        # Apply attention with skip connection
+        x = x + self.attention(hidden_state)
+        # Apply feed-forward layer with a skip connection
+        x = x + self.feed_forward(self.layer_norm_2(x))
+        return x
+
+print("\n### TransformerEncoderLayer")
+encoder_layer = TransformerEncoderLayer(config)
+print(inputs_embeds.shape)
+print(encoder_layer(inputs_embeds).size())
