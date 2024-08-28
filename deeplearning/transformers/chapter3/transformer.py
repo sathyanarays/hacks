@@ -24,13 +24,15 @@ import torch.nn.functional as F
 
 
 
-def scaled_dot_product_attention(query, key, value):
+def scaled_dot_product_attention(query, key, value, mask=None):
     dim_k = query.size(-1)
     #print("### Attention")
     #print("### Q", query.shape)
     #print("### K", key.shape)
     #print("### V", value.shape)
     scores = torch.bmm(query, key.transpose(1,2)) / sqrt(dim_k)    
+    if mask is not None:
+        scores = scores.masked_fill(mask == 0, float("-inf"))
     weights = F.softmax(scores, dim=-1)
     #print("### weights", weights)
     res = torch.bmm(weights, value)
