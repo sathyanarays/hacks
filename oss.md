@@ -5,3 +5,6 @@
 4. [Kubernetes | Job Backoff fix](https://github.com/kubernetes/kubernetes/pull/114768)
 5. [cert-manager | Refresh  secrets on format change](https://github.com/cert-manager/cert-manager/pull/5597)
 6. [cert-manager | Enabling basic constraints in CSR](https://github.com/cert-manager/cert-manager/pull/5552)
+7. [cert-manager | Fixing doc for deploying cert-manager locally](https://github.com/cert-manager/website/pull/1091/files)
+8. [cert-manager | Generating CSR with stable name](https://github.com/cert-manager/cert-manager/pull/5487/files)
+9. [tanzu-framework | Readiness feature in Tanzu framework](https://github.com/vmware-tanzu/tanzu-framework/pulls?q=is%3Apr+author%3Asathyanarays+is%3Aclosed)
